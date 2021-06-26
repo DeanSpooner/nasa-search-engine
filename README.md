@@ -2,7 +2,7 @@
 
 This is a React web application that allows users to search for space-related images using a NASA API endpoint. It was built as a mock technical test as part of the Manchester Codes front-end module.
 
-<img src="https://raw.githubusercontent.com/DeanSpooner/nasa-search-engine/master/src/images/desktop.png" width=50% height=50%>
+<img src="https://raw.githubusercontent.com/DeanSpooner/nasa-search-engine/master/src/images/desktop.png">
 
 <img src="https://raw.githubusercontent.com/DeanSpooner/nasa-search-engine/master/src/images/iphone.png" width=50% height=50%>
 
@@ -50,6 +50,6 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 I intend to add the following to this project in time:
 
 - Ability to open images in full-size in a new tab upon clicking;
-- Display a message for when a result returns 0 results;
+- Display a message for when a result returns 0 results.
 
 ## By [Dean Spooner](https://github.com/DeanSpooner) 🛰
