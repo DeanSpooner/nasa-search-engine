@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Search from "./Search";
+import SearchResults from "./SearchResults";
+
 import "../styles/App.css";
 
-function App() {
+const App = () => {
+  const [searchResults, setSearchResults] = useState([]);
+
   return (
     <div className="App">
       <img
@@ -10,9 +14,10 @@ function App() {
         alt="NASA logo"
         className="nasa_image"
       ></img>
-      <Search />
+      <Search setSearchResults={setSearchResults} />
+      <SearchResults results={searchResults} />
     </div>
   );
-}
+};
 
 export default App;

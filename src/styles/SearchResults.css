@@ -1,0 +1,17 @@
+.searchResults {
+  column-count: 4;
+  column-gap: 15px;
+  margin: 50px;
+}
+
+.images {
+  display: inline-block;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.images img {
+  display: block;
+  width: 100%;
+  border-radius: 25px;
+}
