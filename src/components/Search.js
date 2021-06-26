@@ -25,7 +25,7 @@ const Search = ({ setSearchResults }) => {
           data-testid="search__button"
           type="submit"
         >
-          Search
+          Go!
         </button>
       </form>
     </>

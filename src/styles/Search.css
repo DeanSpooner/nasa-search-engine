@@ -5,5 +5,103 @@ form {
 }
 
 .search__input {
-  width: 40%;
+  border: dashed 1px blue;
+  border-radius: 25px;
+  font-family: "Dosis", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-right: 2%;
+  stroke-dasharray: 19;
+  width: 20%;
+}
+
+.search__input:focus {
+  animation: 1.5s inputsearch forwards;
+  outline: none;
+}
+
+.search__button {
+  background-color: #c90028;
+  font-family: "Dosis", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 40px;
+  width: 40px;
+  justify-content: center;
+  border: 0;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.search__button:focus {
+  animation: 1.5s searching;
+}
+
+@keyframes inputsearch {
+  from {
+    border: dashed 1px blue;
+  }
+  to {
+    border: dashed 1px red;
+  }
+}
+
+@-webkit-keyframes inputsearch {
+  from {
+    border: dashed 1px blue;
+  }
+  to {
+    border: dashed 1px red;
+  }
+}
+
+@-moz-keyframes inputsearch {
+  from {
+    border: dashed 1px blue;
+  }
+  to {
+    border: dashed 1px red;
+  }
+}
+
+@keyframes searching {
+  0% {
+    background-color: #c90028;
+  }
+  50% {
+    background-color: #05053c;
+  }
+  100% {
+    background-color: #c90028;
+  }
+}
+
+@-moz-keyframes searching {
+  0% {
+    background-color: #c90028;
+  }
+  50% {
+    background-color: #05053c;
+  }
+  100% {
+    background-color: #c90028;
+  }
+}
+
+@-webkit-keyframes searching {
+  0% {
+    background-color: #c90028;
+  }
+  50% {
+    background-color: #05053c;
+  }
+  100% {
+    background-color: #c90028;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .search__input {
+    width: 80%;
+  }
 }

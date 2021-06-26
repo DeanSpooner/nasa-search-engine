@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import "../styles/SearchResults.css";
 
 const SearchResults = ({ results }) => {
-  if (!results.length) {
-    return <p>No results</p>;
+  if (results.length === 0) {
+    return null;
   } else {
     return (
       <div className="searchResults">
