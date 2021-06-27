@@ -1,3 +1,9 @@
+.rejectedSearch {
+  animation: fadein 1s;
+  color: #000;
+  text-align: center;
+}
+
 .searchResults {
   display: flex;
   flex-wrap: wrap;

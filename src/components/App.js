@@ -5,6 +5,7 @@ import "../styles/App.css";
 
 const App = () => {
   const [searchResults, setSearchResults] = useState([]);
+  const [hasSearched, setHasSearched] = useState(false);
 
   return (
     <div className="App">
@@ -13,8 +14,11 @@ const App = () => {
         alt="NASA logo"
         className="nasa_image"
       ></img>
-      <Search setSearchResults={setSearchResults} />
-      <SearchResults results={searchResults} />
+      <Search
+        setSearchResults={setSearchResults}
+        setHasSearched={setHasSearched}
+      />
+      <SearchResults results={searchResults} hasSearched={hasSearched} />
     </div>
   );
 };

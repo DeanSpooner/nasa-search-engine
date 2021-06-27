@@ -2,9 +2,17 @@ import React from "react";
 import PropTypes from "prop-types";
 import "../styles/SearchResults.css";
 
-const SearchResults = ({ results }) => {
-  if (results.length === 0) {
+const SearchResults = ({ results, hasSearched }) => {
+  if (results.length === 0 && hasSearched === false) {
     return null;
+  }
+  if (results.length === 0 && hasSearched === true) {
+    return (
+      <p className="rejectedSearch">
+        Sorry, no results exist for this search! Try again with another search
+        term.
+      </p>
+    );
   } else {
     return (
       <div className="searchResults">

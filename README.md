@@ -1,10 +1,19 @@
-# NASA Search Engine by Dean Spooner - [Live here](https://deanspooner.github.io/nasa-search-engine)! 🚀
+# NASA Search Engine v1.1 by Dean Spooner - [Live here](https://deanspooner.github.io/nasa-search-engine)! 🚀
 
 This is a React web application that allows users to search for space-related images using a NASA API endpoint. It was built as a mock technical test as part of the Manchester Codes front-end module.
 
+## Latest updates:
+
+- V1.1: Added a message that displays when a search term returns 0 results, to let the user know the engine has tried to search for them;
+- V1.0: Fully working search engine that takes in a term, and lists related space images from NASA.
+
+### Desktop preview:
+
 <img src="https://raw.githubusercontent.com/DeanSpooner/nasa-search-engine/master/src/images/desktop.png">
 
-<img src="https://raw.githubusercontent.com/DeanSpooner/nasa-search-engine/master/src/images/iphone.png" width=50% height=50%>
+### Mobile preview:
+
+<img src="https://raw.githubusercontent.com/DeanSpooner/nasa-search-engine/master/src/images/iphone.png" width=30% height=30%>
 
 ## Built with:
 
@@ -49,7 +58,6 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 I intend to add the following to this project in time:
 
-- Ability to open images in full-size in a new tab upon clicking;
-- Display a message for when a result returns 0 results.
+- Ability to open images in full-size in a new tab upon clicking.
 
 ## By [Dean Spooner](https://github.com/DeanSpooner) 🛰
